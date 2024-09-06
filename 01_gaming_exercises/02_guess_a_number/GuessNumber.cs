@@ -12,7 +12,7 @@ class GuessNumber {
     
     while(numGuess < maxGuess)
     {
-      Console.WriteLine("Secret Number" + secretNumber);
+      //.WriteLine("Secret Number" + secretNumber);
       Console.WriteLine("Please guess an integer betwwen X and Y .\n");
       guess = Convert.ToInt32(Console.ReadLine());
       // Console.WriteLine(guess);
