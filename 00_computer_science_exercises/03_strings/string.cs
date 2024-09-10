@@ -1,5 +1,5 @@
 using System;
-class Template {
+class String {
   static void Main() {
   //in C# ALL STRINGS MUST USE DOUBLE-QUOTES "  "
   string greeting = "HOW YOU DOIN?\n";
@@ -46,7 +46,7 @@ class Template {
   // Where is it in my string?
   Console.WriteLine(greeting.IndexOf("y"));
 
-  
+
 
 
   }
