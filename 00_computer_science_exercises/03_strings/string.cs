@@ -38,16 +38,27 @@ class String {
   // Substituting variables into strings method 2
   Console.WriteLine("My greeeting is " + greeting + " and my goodbye is " + goodbye + "\n.");
 
+
   // Accessing Parts of Strings
   // index is a specific location of a character in a string
   // ALL string indexes start at 0
   Console.WriteLine(goodbye[0]); // Print the character at index0.
   Console.WriteLine(goodbye[4]); // Replace x wiht what to print the 5th character?
+
   // Where is it in my string?
   Console.WriteLine(greeting.IndexOf("y"));
 
+  // Finding parts of a string
+  string fullName = "Bill Mays";
 
+  //What letter?
+  int LastInitial = fullName.IndexOf("M");
 
+  // Find the substring.
+  string LastName = fullName.Substring(LastInitial);
+
+  //Print it.
+  Console.WriteLine(LastName);
 
   }
 }

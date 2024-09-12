@@ -4,7 +4,6 @@ using System;
 class DataTypesOperators {
   static void Main() {
 // this is a comment, it gets ignored
-//pokjasef09ui03412u50-8934u2-54u-8ue-
 
 /*
 this is still a comment
