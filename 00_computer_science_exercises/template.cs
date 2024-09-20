@@ -59,8 +59,60 @@ while (playerScore < 5 $$ cpuScore < 5)
     Console.WriteLine("unable to determine CPU choice.")
   }
   Console.WriteLine("CPU Choice" + cpuChoice);
-  // ompare the two choicesand determine a winner.
-  // Output the results to the screen=.
+  // compare the two choicesand determine a winner.
+  if (playerChoice == "rock" && cpuChoice == "paper")
+  {
+    Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+    Console.WriteLine("The CPU wins.\n");
+  }
+   if (playerChoice == "rock" && cpuChoice == "scissors")
+  {
+    Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+    Console.WriteLine("you win!\n");
+    playerScore++;
+  }
+   if (playerChoice == "rock" && cpuChoice == "rock")
+  {
+    Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+    Console.WriteLine("It's a draw!");
+  }
+   Console.WriteLine("CPU Choice" + cpuChoice);
+  // paper
+  if (playerChoice == "paper" && cpuChoice == "scissors")
+  {
+    Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+    Console.WriteLine("The CPU wins.\n");
+  }
+   if (playerChoice == "paper" && cpuChoice == "rock")
+  {
+    Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+    Console.WriteLine("you win!\n");
+    playerScore++;
+  }
+   if (playerChoice == "paper" && cpuChoice == "paper")
+  {
+    Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+    Console.WriteLine("It's a draw!");
+  }
+   Console.WriteLine("CPU Choice" + cpuChoice);
+  // scissors
+  if (playerChoice == "scissors" && cpuChoice == "rock")
+  {
+    Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+    Console.WriteLine("The CPU wins.\n");
+  }
+   if (playerChoice == "scissors" && cpuChoice == "paper")
+  {
+    Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+    Console.WriteLine("you win!\n");
+    playerScore++;
+  }
+   if (playerChoice == "scissors" && cpuChoice == "scissors")
+  {
+    Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+    Console.WriteLine("It's a draw!");
+  }
+  // Output the results to the screen.
   // ivethe winner a point.
 
 
