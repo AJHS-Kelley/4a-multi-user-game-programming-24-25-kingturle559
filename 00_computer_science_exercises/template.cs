@@ -4,10 +4,10 @@ class Template {
    
    string playerName = "TestPlayer";
   int PlayerScore = 0;
-  string playerChoice;
+  string playerChoice = "";
 
   int cpuScore = 0;
-  string cpuChoice;
+  string cpuChoice = "";
 
     Console.WriteLine("To start, please enter you name and press ENTER");
     userName = Console.ReadLine();
@@ -46,15 +46,19 @@ while (playerScore < 5 $$ cpuScore < 5)
   {
     cpuChoice = "rock";
   }
-  if (cpuRand == 0)
+  if (cpuRand == 1)
   {
     cpuChoice = "paper";
   }
-  if (cpuRand == 0)
+  if (cpuRand == 2)
   {
     cpuChoice = "scissors";
   }
-  
+  else
+  {
+    Console.WriteLine("unable to determine CPU choice.")
+  }
+  Console.WriteLine("CPU Choice" + cpuChoice);
   // ompare the two choicesand determine a winner.
   // Output the results to the screen=.
   // ivethe winner a point.
