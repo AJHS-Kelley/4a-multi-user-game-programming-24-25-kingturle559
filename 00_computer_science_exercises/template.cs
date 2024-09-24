@@ -116,10 +116,20 @@ while (PlayerScore < 5 && cpuScore < 5)
     Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
     Console.WriteLine("It's a draw!");
   }
+
+if (PlayerScore == 5 )
+{
+  Console.WriteLine("congrats you won!!!");
+
+}
+
+if (cpuScore == 5 )
+{
+  Console.WriteLine("you have been defeated.");
+}
   // Output the results to the screen.
   // ivethe winner a point.
 
 }
 }
 }
-
