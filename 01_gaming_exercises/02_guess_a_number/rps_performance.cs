@@ -21,7 +21,7 @@ Random rnd = new Random();
 while (loopCount < loopReqs)
   {
     // allow CPU to select randomly.
-    int cpuRand = rnd.Next(0, 2);
+    int cpuRand = rnd.Next(0, 3);
 
     if (cpuRand == 0)
     {
@@ -40,7 +40,7 @@ while (loopCount < loopReqs)
       Console.WriteLine("unable to determine CPU choice.");
     }
     
-    int playerRand = rnd.Next(0, 2);
+    int playerRand = rnd.Next(0, 3);
 
     if (cpuRand == 0)
     {
@@ -64,19 +64,19 @@ while (loopCount < loopReqs)
     {
     
       Console.WriteLine("The CPU wins.\n");
-      cpuScore++;
+      cpuScore = cpuScore + 1;
     }
     if (playerChoice == "rock" && cpuChoice == "scissors")
     {
     
       Console.WriteLine("you win!\n");
-      playerScore++;
+     playerScore = playerScore + 1;
     }
     if (playerChoice == "rock" && cpuChoice == "rock")
     {
     
       Console.WriteLine("It's a draw!");
-      numDraws++;
+      numDraws = numDraws + 1;
     }
     Console.WriteLine("CPU Choice" + cpuChoice);
     // paper
@@ -84,19 +84,19 @@ while (loopCount < loopReqs)
     {
     
       Console.WriteLine("The CPU wins.\n");
-      cpuScore++;
+      cpuScore = cpuScore + 1;
     }
     if (playerChoice == "paper" && cpuChoice == "rock")
     {
     
       Console.WriteLine("you win!\n");
-      playerScore++;
+     playerScore = playerScore + 1;
     }
     if (playerChoice == "paper" && cpuChoice == "paper")
     {
     
       Console.WriteLine("It's a draw!");
-      numDraws++;
+      numDraws = numDraws + 1;
     }
     Console.WriteLine("CPU Choice" + cpuChoice);
     // scissors
@@ -104,19 +104,19 @@ while (loopCount < loopReqs)
     {
     
       Console.WriteLine("The CPU wins.\n");
-      cpuScore++;
+      cpuScore = cpuScore + 1;
     }
     if (playerChoice == "scissors" && cpuChoice == "paper")
     {
     
       Console.WriteLine("you win!\n");
-      playerScore++;
+     playerScore = playerScore + 1;
     }
     if (playerChoice == "scissors" && cpuChoice == "scissors")
     {
     
       Console.WriteLine("It's a draw!");
-      numDraws++;
+      numDraws = numDraws + 1;
     }
 
 
